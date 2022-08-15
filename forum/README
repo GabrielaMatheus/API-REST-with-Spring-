@@ -1,0 +1,19 @@
+Para fazer o projeto Forum rodar:
+
+Use o postman para obter ou enviar as informações.
+Primeiro, você precisa de um token pra ter acesso. 
+Pra gerar esse token, você acessa a URL:http://localhost:8080/auth , com o tipo post sendo mandado, no corpo (body -> raw) as informações de login:
+
+{
+    "email":"aluno@email.com",
+    "senha":"123456"
+} //esse só da acesso ao GET
+
+{
+    "email":"moderador@email.com",
+    "senha":"123456"
+} //esse da acesso a tudo
+
+Ele vai devolver o token, você copia ele e, acessando qualquer URL depois, você coloca na aba Authorization (tipo do token é bearer) e cola o token. 
+
+Assim, você consegue fazer qualquer requisição e mudança.
